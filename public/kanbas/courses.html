@@ -178,7 +178,7 @@
       <div class="d-flex align-items-center">
         <i class="fa-solid fa-house" style="color: red"></i>
         <a
-          href="/public/kanbas/home.html"
+          href="/kanbas/courses.html"
           style="color: red; text-decoration: none; margin-left: 5px"
           >Home</a
         >
@@ -204,7 +204,7 @@
       <div class="d-flex align-items-center">
         <i class="fa-regular fa-newspaper" style="color: red"></i>
         <a
-          href="/public/kanbas/assignments/index.html"
+          href="/kanbas/assignments/index.html"
           style="color: red; text-decoration: none; margin-left: 5px"
           >Assignments</a
         >
@@ -218,7 +218,7 @@
       <div class="d-flex align-items-center">
         <i class="fa-solid fa-book" style="color: red"></i>
         <a
-          href="/public/kanbas/grades.html"
+          href="/kanbas/grades.html"
           style="color: red; text-decoration: none; margin-left: 5px"
           >Grades</a
         >
@@ -307,19 +307,19 @@
           class="list-group-item kanbas-nav d-flex flex-column justify-content-center align-items-center"
         >
           <i class="fa-regular fa-user fa-2x" style="color: grey"></i>
-          <a class="kanbas-nav-a" href="./account.html">Account</a>
+          <a class="kanbas-nav-a" href="/kanbas/profile/index.html">Account</a>
         </li>
         <li
           class="list-group-item kanbas-nav d-flex flex-column justify-content-center align-items-center"
         >
           <i class="fa-solid fa-gauge fa-2x" style="color: red"></i>
-          <a class="kanbas-nav-a" href="./dashboard.html">Dashboard</a>
+          <a class="kanbas-nav-a" href="/kanbas/dashboard.html">Dashboard</a>
         </li>
         <li
           class="list-group-item kanbas-nav d-flex flex-column justify-content-center align-items-center active"
         >
           <i class="fa-solid fa-book fa-2x" style="color: red"></i>
-          <a class="kanbas-nav-a" style="color: red" href="./courses.html"
+          <a class="kanbas-nav-a" style="color: red" href="/kanbas/courses.html"
             >Courses</a
           >
         </li>
@@ -363,16 +363,39 @@
       <div class="d-flex flex-column" style="margin-left: 22px; flex-grow: 1">
         <div class="d-none d-xl-block">
           <div class="d-flex align-items-center" style="gap: 20px">
-            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-              <line x1="0" y1="3" x2="20" y2="3" stroke="red" />
-              <line x1="0" y1="10" x2="20" y2="10" stroke="red" />
-              <line x1="0" y1="17" x2="20" y2="17" stroke="red" />
-            </svg>
-            <p style="margin-top: 15px; color: red; margin-right: -10px">
-              CS4550.12631.202410
-            </p>
-            <i class="fa-solid fa-arrow-right" style="margin-right: -10px"></i>
-            <p style="margin-top: 15px">Home</p>
+            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <div class="d-flex align-items-center">
+                    <svg
+                      width="20"
+                      height="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <line x1="0" y1="3" x2="20" y2="3" stroke="red" />
+                      <line x1="0" y1="10" x2="20" y2="10" stroke="red" />
+                      <line x1="0" y1="17" x2="20" y2="17" stroke="red" />
+                    </svg>
+                    <p
+                      style="
+                        margin-top: 15px;
+                        color: red;
+                        margin-right: -10px;
+                        margin-left: 20px;
+                      "
+                    >
+                      CS4550.12631.202410
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="breadcrumb-item"
+                  style="margin-top: 14px; margin-left: 10px"
+                >
+                  Modules
+                </li>
+              </ol>
+            </nav>
             <button
               type="button"
               class="btn btn-secondary"
@@ -436,7 +459,7 @@
               <a
                 class="account-nav-a"
                 style="color: black; margin-left: -5px"
-                href="./home.html"
+                href="/kanbas/courses.html"
                 >Home</a
               >
             </li>
@@ -450,7 +473,7 @@
               <a class="account-nav-a" href="#">Zoom Meetings</a>
             </li>
             <li class="list-group-item">
-              <a class="account-nav-a" href="./assignments/index.html"
+              <a class="account-nav-a" href="/kanbas/assignments/index.html"
                 >Assignments</a
               >
             </li>
@@ -458,7 +481,7 @@
               <a class="account-nav-a" href="#">Quizzes</a>
             </li>
             <li class="list-group-item">
-              <a class="account-nav-a" href="./grades.html">Grades</a>
+              <a class="account-nav-a" href="/kanbas/grades.html">Grades</a>
             </li>
             <li class="list-group-item">
               <a class="account-nav-a" href="#">People</a>
@@ -545,7 +568,10 @@
                     >Module
                   </button>
                   <button type="button" class="btn btn-secondary">
-                    <i class="fa-solid fa-braille"></i>
+                    <i
+                      class="fa-solid fa-ellipsis-vertical float-end"
+                      style="height: 20px; margin-top: 3px"
+                    ></i>
                   </button>
                 </div>
                 <hr />

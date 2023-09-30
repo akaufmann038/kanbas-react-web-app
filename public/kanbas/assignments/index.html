@@ -2,158 +2,832 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>A1 - Assignments</title>
+    <title>A1 - Courses</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/9cc191a4a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="../index.css" rel="stylesheet" />
   </head>
   <body>
-    <table border="0" width="100%">
-      <tbody>
-        <tr valign="baseline">
-          <td>
-            <li><a href="../account.html">Account</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="../courses.html">Courses</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
-          </td>
-          <td>
-            <li><a href="../home.html">Home</a></li>
-            <li><a href="#">Modules</a></li>
-            <li><a href="#">Piazza</a></li>
-            <li><a href="#">Zoom Meetings</a></li>
-            <li><a href="./index.html">Assignments</a></li>
-            <li><a href="#">Quizzes</a></li>
-            <li><a href="../grades.html">Grades</a></li>
-            <li><a href="#">People</a></li>
-            <li><a href="#">Panopto Video</a></li>
-            <li><a href="#">Discussions</a></li>
-            <li><a href="#">Announcements</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Files</a></li>
-            <li><a href="#">Rubrics</a></li>
-            <li><a href="#">Outcomes</a></li>
-            <li><a href="#">Collaborations</a></li>
-            <li><a href="#">Syllabus</a></li>
-            <li><a href="#">Settings</a></li>
-          </td>
-          <td>
-            <input type="text" placeholder="Search for Assignments" />
-            <button type="button">Group</button>
-            <button type="button">Assignment</button>
-            <select>
-              <option value="#">Edit Assignment Dates</option>
-            </select>
-            <hr />
-            <h4>ASSIGNMENTS 40% of Total</h4>
-            <select>
-              <option value="#">Edit</option>
-              <option value="#">Speed Grader</option>
-              <option value="#">Duplicate</option>
-              <option value="#">Delete</option>
-              <option value="#">Move To...</option>
-              <option value="#">Send To...</option>
-              <option value="#">Copy To...</option>
-              <option value="#">Share to Commons</option>
-            </select>
-            <li>
-              <a href="./edit.html">A1 - ENV + HTML Multiple Modules</a>
-              | Not Available yet
+    <div id="kanbas-nav-popup" class="kanbas-nav-popup d-flex flex-column">
+      <a
+        href="#"
+        style="
+          align-self: flex-end;
+          margin-top: 10px;
+          margin-right: 10px;
+          color: grey;
+        "
+        ><i class="fa-solid fa-x"></i
+      ></a>
+      <div
+        class="d-flex align-items-center"
+        style="padding-top: 10px; padding-bottom: 10px"
+      >
+        <i class="fa-solid fa-gauge" style="color: red; margin-left: 15px"></i>
+        <a style="color: red; text-decoration: none; margin-left: 10px"
+          >Dashboard</a
+        >
+      </div>
+      <div
+        class="d-flex align-items-center"
+        style="justify-content: space-between; margin-left: 15px"
+      >
+        <div
+          class="d-flex align-items-center"
+          style="padding-top: 10px; padding-bottom: 10px"
+        >
+          <i
+            class="fa-regular fa-user"
+            style="color: red; margin-left: 15px"
+          ></i>
+          <a style="color: red; text-decoration: none; margin-left: 10px"
+            >Account</a
+          >
+        </div>
+        <i class="fa-solid fa-arrow-right" style="margin-right: 20px"></i>
+      </div>
+      <div
+        class="d-flex align-items-center"
+        style="justify-content: space-between; margin-left: 15px"
+      >
+        <div
+          class="d-flex align-items-center"
+          style="padding-top: 10px; padding-bottom: 10px"
+        >
+          <i class="fa-solid fa-book" style="color: red; margin-left: 15px"></i>
+          <a style="color: red; text-decoration: none; margin-left: 10px"
+            >Courses</a
+          >
+        </div>
+        <i class="fa-solid fa-arrow-right" style="margin-right: 20px"></i>
+      </div>
+      <div
+        class="d-flex align-items-center"
+        style="padding-top: 10px; padding-bottom: 10px"
+      >
+        <i
+          class="fa-regular fa-calendar"
+          style="color: red; margin-left: 15px"
+        ></i>
+        <a style="color: red; text-decoration: none; margin-left: 10px"
+          >Calendar</a
+        >
+      </div>
+      <div
+        class="d-flex align-items-center"
+        style="padding-top: 10px; padding-bottom: 10px"
+      >
+        <i class="fa-solid fa-inbox" style="color: red; margin-left: 15px"></i>
+        <a style="color: red; text-decoration: none; margin-left: 10px"
+          >Inbox</a
+        >
+      </div>
+      <div
+        class="d-flex align-items-center"
+        style="padding-top: 10px; padding-bottom: 10px"
+      >
+        <i class="fa-solid fa-tv" style="color: red; margin-left: 15px"></i>
+        <a style="color: red; text-decoration: none; margin-left: 10px"
+          >Studio</a
+        >
+      </div>
+      <div
+        class="d-flex align-items-center"
+        style="padding-top: 10px; padding-bottom: 10px"
+      >
+        <i
+          class="fa-brands fa-creative-commons-sa"
+          style="color: red; margin-left: 15px"
+        ></i>
+        <a style="color: red; text-decoration: none; margin-left: 10px"
+          >Commons</a
+        >
+      </div>
+      <div
+        class="d-flex align-items-center"
+        style="justify-content: space-between; margin-left: 15px"
+      >
+        <div
+          class="d-flex align-items-center"
+          style="padding-top: 10px; padding-bottom: 10px"
+        >
+          <i
+            class="fa-regular fa-clock"
+            style="color: red; margin-left: 15px"
+          ></i>
+          <a style="color: red; text-decoration: none; margin-left: 10px"
+            >History</a
+          >
+        </div>
+        <i class="fa-solid fa-arrow-right" style="margin-right: 20px"></i>
+      </div>
+      <div
+        class="d-flex align-items-center"
+        style="justify-content: space-between; margin-left: 15px"
+      >
+        <div
+          class="d-flex align-items-center"
+          style="padding-top: 10px; padding-bottom: 10px"
+        >
+          <i
+            class="fa-solid fa-question"
+            style="color: red; margin-left: 15px"
+          ></i>
+          <a style="color: red; text-decoration: none; margin-left: 10px"
+            >Help</a
+          >
+        </div>
+        <i class="fa-solid fa-arrow-right" style="margin-right: 20px"></i>
+      </div>
+    </div>
+    <div id="course-nav-popup" class="course-nav-popup d-flex flex-column">
+      <nav class="courses-nav-bar navbar" style="background-color: black">
+        <a href="#kanbas-nav-popup">
+          <svg
+            width="20"
+            height="20"
+            xmlns="http://www.w3.org/2000/svg"
+            style="margin-left: 10px"
+          >
+            <line x1="0" y1="3" x2="20" y2="3" stroke="white" />
+            <line x1="0" y1="10" x2="20" y2="10" stroke="white" />
+            <line x1="0" y1="17" x2="20" y2="17" stroke="white" />
+          </svg>
+        </a>
+        <div class="d-flex flex-column align-items-center">
+          <p style="margin: 0; color: white">CS4550.12631.202410</p>
+          <p style="margin: 0; color: white">Modules</p>
+        </div>
+        <a href="#" style="margin-right: 10px; color: grey"
+          ><i class="fa-solid fa-x"></i
+        ></a>
+      </nav>
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-house" style="color: red"></i>
+        <a
+          href="/kanbas/courses.html"
+          style="color: red; text-decoration: none; margin-left: 5px"
+          >Home</a
+        >
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-dice-three" style="color: red"></i>
+        <a href="#" style="color: red; text-decoration: none; margin-left: 5px"
+          >Modules</a
+        >
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-plug" style="color: red"></i>
+        <a href="#" style="color: red; text-decoration: none; margin-left: 5px"
+          >Piazza</a
+        >
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-plug" style="color: red"></i>
+        <a href="#" style="color: red; text-decoration: none; margin-left: 5px"
+          >Zoom Meetings</a
+        >
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-regular fa-newspaper" style="color: red"></i>
+        <a
+          href="/kanbas/assignments/index.html"
+          style="color: red; text-decoration: none; margin-left: 5px"
+          >Assignments</a
+        >
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-rocket" style="color: red"></i>
+        <a href="#" style="color: red; text-decoration: none; margin-left: 5px"
+          >Quizzes</a
+        >
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-book" style="color: red"></i>
+        <a
+          href="/kanbas/grades.html"
+          style="color: red; text-decoration: none; margin-left: 5px"
+          >Grades</a
+        >
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-people-group" style="color: red"></i>
+        <a href="#" style="color: red; text-decoration: none; margin-left: 5px"
+          >People</a
+        >
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-plug" style="color: red"></i>
+        <a href="#" style="color: red; text-decoration: none; margin-left: 5px"
+          >Panopto Video</a
+        >
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-comment" style="color: red"></i>
+        <a href="#" style="color: red; text-decoration: none; margin-left: 5px"
+          >Discussions</a
+        >
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-bullhorn" style="color: red"></i>
+        <a href="#" style="color: red; text-decoration: none; margin-left: 5px"
+          >Announcements</a
+        >
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-regular fa-newspaper" style="color: red"></i>
+        <a href="#" style="color: red; text-decoration: none; margin-left: 5px"
+          >Pages</a
+        >
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-regular fa-file" style="color: red"></i>
+        <a href="#" style="color: red; text-decoration: none; margin-left: 5px"
+          >Files</a
+        >
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-clipboard-list" style="color: red"></i>
+        <a href="#" style="color: red; text-decoration: none; margin-left: 5px"
+          >Rubrics</a
+        >
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-regular fa-circle" style="color: red"></i>
+        <a href="#" style="color: red; text-decoration: none; margin-left: 5px"
+          >Outcomes</a
+        >
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-regular fa-circle" style="color: red"></i>
+        <a href="#" style="color: red; text-decoration: none; margin-left: 5px"
+          >Collaborations</a
+        >
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-book" style="color: red"></i>
+        <a href="#" style="color: red; text-decoration: none; margin-left: 5px"
+          >Syllabus</a
+        >
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-plug" style="color: red"></i>
+        <a href="#" style="color: red; text-decoration: none; margin-left: 5px"
+          >Progress Reports (EAB Navigate)</a
+        >
+      </div>
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-gear" style="color: red"></i>
+        <a href="#" style="color: red; text-decoration: none; margin-left: 5px"
+          >Settings</a
+        >
+      </div>
+    </div>
+    <div class="d-flex">
+      <ul class="list-group d-none d-xl-block" style="width: 100px">
+        <li
+          class="list-group-item kanbas-nav d-flex justify-content-center align-items-center"
+        >
+          <i class="fa-solid fa-n fa-2x" style="color: red"></i>
+        </li>
+        <li
+          class="list-group-item kanbas-nav d-flex flex-column justify-content-center align-items-center"
+        >
+          <i class="fa-regular fa-user fa-2x" style="color: grey"></i>
+          <a class="kanbas-nav-a" href="/kanbas/profile/index.html">Account</a>
+        </li>
+        <li
+          class="list-group-item kanbas-nav d-flex flex-column justify-content-center align-items-center"
+        >
+          <i class="fa-solid fa-gauge fa-2x" style="color: red"></i>
+          <a class="kanbas-nav-a" href="/kanbas/dashboard.html">Dashboard</a>
+        </li>
+        <li
+          class="list-group-item kanbas-nav d-flex flex-column justify-content-center align-items-center active"
+        >
+          <i class="fa-solid fa-book fa-2x" style="color: red"></i>
+          <a class="kanbas-nav-a" style="color: red" href="/kanbas/courses.html"
+            >Courses</a
+          >
+        </li>
+        <li
+          class="list-group-item kanbas-nav d-flex flex-column justify-content-center align-items-center"
+        >
+          <i class="fa-regular fa-calendar fa-2x" style="color: red"></i>
+          <a class="kanbas-nav-a" href="#">Calendar</a>
+        </li>
+        <li
+          class="list-group-item kanbas-nav d-flex flex-column justify-content-center align-items-center"
+        >
+          <i class="fa-solid fa-inbox fa-2x" style="color: red"></i>
+          <a class="kanbas-nav-a" href="#">Inbox</a>
+        </li>
+        <li
+          class="list-group-item kanbas-nav d-flex flex-column justify-content-center align-items-center"
+        >
+          <i class="fa-regular fa-clock fa-2x" style="color: red"></i>
+          <a class="kanbas-nav-a" href="#">History</a>
+        </li>
+        <li
+          class="list-group-item kanbas-nav d-flex flex-column justify-content-center align-items-center"
+        >
+          <i class="fa-brands fa-youtube fa-2x" style="color: red"></i>
+          <a class="kanbas-nav-a" href="#">Studio</a>
+        </li>
+        <li
+          class="list-group-item kanbas-nav d-flex flex-column justify-content-center align-items-center"
+        >
+          <i class="fa-solid fa-right-to-bracket fa-2x" style="color: red"></i>
+          <a class="kanbas-nav-a" href="#">Commons</a>
+        </li>
+        <li
+          class="list-group-item kanbas-nav d-flex flex-column justify-content-center align-items-center"
+        >
+          <i class="fa-solid fa-question fa-2x" style="color: red"></i>
+          <a class="kanbas-nav-a" href="#">Help</a>
+        </li>
+      </ul>
+      <div class="d-flex flex-column" style="margin-left: 22px; flex-grow: 1">
+        <div class="d-none d-xl-block">
+          <div class="d-flex align-items-center" style="gap: 20px">
+            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <div class="d-flex align-items-center">
+                    <svg
+                      width="20"
+                      height="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <line x1="0" y1="3" x2="20" y2="3" stroke="red" />
+                      <line x1="0" y1="10" x2="20" y2="10" stroke="red" />
+                      <line x1="0" y1="17" x2="20" y2="17" stroke="red" />
+                    </svg>
+                    <p
+                      style="
+                        margin-top: 15px;
+                        color: red;
+                        margin-right: -10px;
+                        margin-left: 20px;
+                      "
+                    >
+                      CS4550.12631.202410
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="breadcrumb-item"
+                  style="margin-top: 14px; margin-left: 10px"
+                >
+                  Assignments
+                </li>
+              </ol>
+            </nav>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              style="margin-left: auto; margin-right: 20px"
+            >
+              <i class="fa-solid fa-glasses"></i>
+              Student View
+            </button>
+          </div>
+          <hr />
+        </div>
+        <nav
+          class="courses-nav-bar navbar d-xl-none"
+          style="background-color: black"
+        >
+          <a href="#kanbas-nav-popup">
+            <svg
+              width="20"
+              height="20"
+              xmlns="http://www.w3.org/2000/svg"
+              style="margin-left: 10px"
+            >
+              <line x1="0" y1="3" x2="20" y2="3" stroke="white" />
+              <line x1="0" y1="10" x2="20" y2="10" stroke="white" />
+              <line x1="0" y1="17" x2="20" y2="17" stroke="white" />
+            </svg>
+          </a>
+          <div class="d-flex flex-column align-items-center">
+            <p style="margin: 0; color: white">CS4550.12631.202410</p>
+            <p style="margin: 0; color: white">Modules</p>
+          </div>
+          <div>
+            <a href="#course-nav-popup"
+              ><i
+                class="fa-solid fa-glasses fa-lg"
+                style="color: white; margin-right: 5px"
+              ></i
+            ></a>
+            <i
+              class="fa-solid fa-caret-down"
+              style="margin-right: 5px; color: white"
+            ></i>
+          </div>
+        </nav>
+        <div class="d-flex" style="margin-top: 15px">
+          <ul class="list-group d-none d-xl-block" style="width: 180px">
+            <li class="list-group-item">
+              <p style="color: grey; font-size: 0.9em; margin: 0px">
+                202410_1 Fall Semester
+              </p>
             </li>
-            <li>
-              <a href="./edit.html">A2 - CSS + BOOTSTRAP Multiple Modules</a> |
-              Not Available yet
+            <li class="list-group-item">
+              <a class="account-nav-a" href="/kanbas/courses.html">Home</a>
             </li>
-            <li>
-              <a href="./edit.html">A3 - JS + REACT Multiple Modules</a> | Not
-              Available yet
+            <li class="list-group-item">
+              <a class="account-nav-a" href="#">Modules</a>
             </li>
-            <li>
-              <a href="./edit.html">A4 - STATE + REDUX Multiple Modules</a> |
-              Not Available yet
+            <li class="list-group-item">
+              <a class="account-nav-a" href="#">Piazza</a>
             </li>
-            <li>
-              <a href="./edit.html">A5 - NODE + SESSION Multiple Modules</a> |
-              Not Available yet
+            <li class="list-group-item">
+              <a class="account-nav-a" href="#">Zoom Meetings</a>
             </li>
-            <li>
-              <a href="./edit.html">A5 - MONGO + MONGOOSE Multiple Modules</a> |
-              Not Available yet
+            <li class="list-group-item">
+              <svg
+                width="10"
+                height="30"
+                xmlns="http://www.w3.org/2000/svg"
+                style="margin-left: -10"
+              >
+                <line x1="5" y1="0" x2="5" y2="100" stroke="black" />
+              </svg>
+              <a
+                class="account-nav-a"
+                style="color: black; margin-left: -5px"
+                href="/kanbas/assignments/index.html"
+                >Assignments</a
+              >
             </li>
-            <li>
-              <a href="./edit.html">A6 - MONGO + MONGOOSE Multiple Modules</a> |
-              Not Available yet
+            <li class="list-group-item">
+              <a class="account-nav-a" href="#">Quizzes</a>
             </li>
-            <h4>QUIZZES 10% of Total</h4>
-            <select>
-              <option value="#">Edit</option>
-              <option value="#">Speed Grader</option>
-              <option value="#">Duplicate</option>
-              <option value="#">Delete</option>
-              <option value="#">Move To...</option>
-              <option value="#">Send To...</option>
-              <option value="#">Copy To...</option>
-              <option value="#">Share to Commons</option>
-            </select>
-            <li>
-              <a href="./edit.html">Q1 - HTML Multiple Modules</a>
-              | Not Available yet
+            <li class="list-group-item">
+              <a class="account-nav-a" href="/kanbas/grades.html">Grades</a>
             </li>
-            <li>
-              <a href="./edit.html">Q2 - CSS Multiple Modules</a> | Not
-              Available yet
+            <li class="list-group-item">
+              <a class="account-nav-a" href="#">People</a>
             </li>
-            <li>
-              <a href="./edit.html">Q3 - JS, ES6 Multiple Modules</a> | Not
-              Available yet
+            <li class="list-group-item">
+              <a class="account-nav-a" href="#">Panopto Video</a>
             </li>
-            <li>
-              <a href="./edit.html">Q4 - NODE Multiple Modules</a> | Not
-              Available yet
+            <li class="list-group-item d-flex justify-content-between">
+              <a class="account-nav-a" href="#">Discussions</a>
+              <i class="fa-regular fa-eye-slash"></i>
             </li>
-            <li>
-              <a href="./edit.html">Q5 - MONGO Multiple Modules</a> | Not
-              Available yet
+            <li class="list-group-item d-flex justify-content-between">
+              <a class="account-nav-a" href="#">Announcements</a>
+              <i class="fa-regular fa-eye-slash"></i>
             </li>
-            <h4>EXAMS 20% of Total</h4>
-            <select>
-              <option value="#">Edit</option>
-              <option value="#">Speed Grader</option>
-              <option value="#">Duplicate</option>
-              <option value="#">Delete</option>
-              <option value="#">Move To...</option>
-              <option value="#">Send To...</option>
-              <option value="#">Copy To...</option>
-              <option value="#">Share to Commons</option>
-            </select>
-            <li>
-              <a href="./edit.html">Midterm Multiple Modules</a>
-              | Not Available yet
+            <li class="list-group-item d-flex justify-content-between">
+              <a class="account-nav-a" href="#">Pages</a>
+              <i class="fa-regular fa-eye-slash"></i>
             </li>
-            <li>
-              <a href="./edit.html">Final Multiple Modules</a>
-              | Not Available yet
+            <li class="list-group-item d-flex justify-content-between">
+              <a class="account-nav-a" href="#">Files</a>
+              <i class="fa-regular fa-eye-slash"></i>
             </li>
-            <h4>PROJECT 30% of Total</h4>
-            <select>
-              <option value="#">Edit</option>
-              <option value="#">Speed Grader</option>
-              <option value="#">Duplicate</option>
-              <option value="#">Delete</option>
-              <option value="#">Move To...</option>
-              <option value="#">Send To...</option>
-              <option value="#">Copy To...</option>
-              <option value="#">Share to Commons</option>
-            </select>
-            <li>
-              <a href="./edit.html">Project Multiple Modules</a>
-              | Not Available yet
+            <li class="list-group-item d-flex justify-content-between">
+              <a class="account-nav-a" href="#">Rubrics</a>
+              <i class="fa-regular fa-eye-slash"></i>
             </li>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+            <li class="list-group-item d-flex justify-content-between">
+              <a class="account-nav-a" href="#">Outcomes</a>
+              <i class="fa-regular fa-eye-slash"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <a class="account-nav-a" href="#">Collaborations</a>
+              <i class="fa-regular fa-eye-slash"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <a class="account-nav-a" href="#">Syllabus</a>
+              <i class="fa-regular fa-eye-slash"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <a class="account-nav-a" href="#">Settings</a>
+              <i class="fa-regular fa-eye-slash"></i>
+            </li>
+          </ul>
+          <div class="container-fluid">
+            <div class="d-flex flex-column" style="flex-grow: 1">
+              <div class="d-flex justify-content-between">
+                <input
+                  type="text"
+                  class="form-control w-25"
+                  placeholder="Search for Assignment"
+                  style="height: 40px"
+                />
+                <div
+                  class="d-flex align-items-center"
+                  style="margin-bottom: 20px"
+                >
+                  <button type="button" class="btn btn-secondary">
+                    <i
+                      class="fa-solid fa-plus"
+                      style="color: white; margin-right: 5px"
+                    ></i
+                    >Group
+                  </button>
+                  <button type="button" class="btn btn-danger">
+                    <i
+                      class="fa-solid fa-plus"
+                      style="color: white; margin-right: 5px"
+                    ></i
+                    >Assignment
+                  </button>
+                  <button type="button" class="btn btn-secondary">
+                    <i
+                      class="fa-solid fa-ellipsis-vertical float-end"
+                      style="height: 20px; margin-top: 3px"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+              <hr />
+              <ul class="list-group" style="margin-top: 30px">
+                <li
+                  class="list-group-item list-group-item-courses list-group-item-secondary"
+                >
+                  <i class="fa-solid fa-braille" style="margin-right: 10px"></i
+                  ><i
+                    class="fa-solid fa-caret-down"
+                    style="margin-right: 5px"
+                  ></i
+                  ><a style="font-weight: bold">Assignments</a
+                  ><i
+                    class="fa-solid fa-ellipsis-vertical float-end"
+                    style="margin-top: 5px"
+                  ></i
+                  ><i
+                    class="fa fa-plus float-end"
+                    aria-hidden="true"
+                    style="
+                      margin-left: 20px;
+                      margin-right: 20px;
+                      margin-top: 5px;
+                    "
+                  ></i>
+                  <div
+                    class="float-end rounded"
+                    style="
+                      border: 1px solid grey;
+                      padding-left: 4px;
+                      padding-right: 4px;
+                      padding-bottom: 4px;
+                    "
+                  >
+                    40% of Total
+                  </div>
+                </li>
+                <li
+                  class="list-group-item list-group-item-courses"
+                  style="border-left: 5px solid green"
+                >
+                  <i class="fa-solid fa-braille" style="margin-right: 10px"></i
+                  ><i
+                    class="fa-regular fa-pen-to-square"
+                    style="margin-left: 5px; margin-right: 10px"
+                  ></i>
+                  <i
+                    class="fa-solid fa-ellipsis-vertical float-end"
+                    style="margin-left: 20px; margin-top: 18px"
+                  ></i
+                  ><i
+                    class="fa fa-check-circle float-end"
+                    aria-hidden="true"
+                    style="color: green; margin-top: 18px"
+                  ></i>
+                  <div class="d-inline-flex flex-column">
+                    <a
+                      style="
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: black;
+                      "
+                      href="edit.html"
+                      >A1 SETUP</a
+                    >
+                    <a style="font-size: 0.7em"
+                      >Week 0 - SETUP - Week starting on Monday Septermber 5th
+                      (9/5/2022) Module |</a
+                    >
+                    <div style="font-size: 0.7em">
+                      <a style="font-weight: bold">Due</a> Sep 18, 2022 at
+                      11:59pm | 100 pts
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="list-group-item list-group-item-courses"
+                  style="border-left: 5px solid green"
+                >
+                  <i class="fa-solid fa-braille" style="margin-right: 10px"></i
+                  ><i
+                    class="fa-regular fa-pen-to-square"
+                    style="margin-left: 5px; margin-right: 10px"
+                  ></i>
+                  <i
+                    class="fa-solid fa-ellipsis-vertical float-end"
+                    style="margin-left: 20px; margin-top: 18px"
+                  ></i
+                  ><i
+                    class="fa fa-check-circle float-end"
+                    aria-hidden="true"
+                    style="color: green; margin-top: 18px"
+                  ></i>
+                  <div class="d-inline-flex flex-column">
+                    <a
+                      style="
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: black;
+                      "
+                      href="edit.html"
+                      >A2 HTML</a
+                    >
+                    <a style="font-size: 0.7em"
+                      >Week 1 - HTML - Week starting on Monday September 12th
+                      (9/12/2022) Module |</a
+                    >
+                    <div style="font-size: 0.7em">
+                      <a style="font-weight: bold">Due</a> Sep 25, 2022 at
+                      11:59pm | 100 pts
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="list-group-item list-group-item-courses"
+                  style="border-left: 5px solid green"
+                >
+                  <i class="fa-solid fa-braille" style="margin-right: 10px"></i
+                  ><i
+                    class="fa-regular fa-pen-to-square"
+                    style="margin-left: 5px; margin-right: 10px"
+                  ></i>
+                  <i
+                    class="fa-solid fa-ellipsis-vertical float-end"
+                    style="margin-left: 20px; margin-top: 18px"
+                  ></i
+                  ><i
+                    class="fa fa-check-circle float-end"
+                    aria-hidden="true"
+                    style="color: green; margin-top: 18px"
+                  ></i>
+                  <div class="d-inline-flex flex-column">
+                    <a
+                      style="
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: black;
+                      "
+                      href="edit.html"
+                      >A3 CSS</a
+                    >
+                    <a style="font-size: 0.7em"
+                      >Week 2 - CSS - Week starting on Monday September 19th
+                      (9/19/2022) Module |</a
+                    >
+                    <div style="font-size: 0.7em">
+                      <a style="font-weight: bold">Due</a> Oct 2, 2022 at
+                      11:59pm | 100 pts
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="list-group-item list-group-item-courses"
+                  style="border-left: 5px solid green"
+                >
+                  <i class="fa-solid fa-braille" style="margin-right: 10px"></i
+                  ><i
+                    class="fa-regular fa-pen-to-square"
+                    style="margin-left: 5px; margin-right: 10px"
+                  ></i>
+                  <i
+                    class="fa-solid fa-ellipsis-vertical float-end"
+                    style="margin-left: 20px; margin-top: 18px"
+                  ></i
+                  ><i
+                    class="fa fa-check-circle float-end"
+                    aria-hidden="true"
+                    style="color: green; margin-top: 18px"
+                  ></i>
+                  <div class="d-inline-flex flex-column">
+                    <a
+                      style="
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: black;
+                      "
+                      href="edit.html"
+                      >A4 BOOTSTRAP</a
+                    >
+                    <a style="font-size: 0.7em"
+                      >Week 4 - BOOTSTRAP - Week starting on Monday September
+                      26th (9/26/2022) Module |</a
+                    >
+                    <div style="font-size: 0.7em">
+                      <a style="font-weight: bold">Due</a> Oct 10, 2022 at
+                      11:59pm | 100 pts
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="list-group-item list-group-item-courses"
+                  style="border-left: 5px solid green"
+                >
+                  <i class="fa-solid fa-braille" style="margin-right: 10px"></i
+                  ><i
+                    class="fa-regular fa-pen-to-square"
+                    style="margin-left: 5px; margin-right: 10px"
+                  ></i>
+                  <i
+                    class="fa-solid fa-ellipsis-vertical float-end"
+                    style="margin-left: 20px; margin-top: 18px"
+                  ></i
+                  ><i
+                    class="fa fa-check-circle float-end"
+                    aria-hidden="true"
+                    style="color: green; margin-top: 18px"
+                  ></i>
+                  <div class="d-inline-flex flex-column">
+                    <a
+                      style="
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: black;
+                      "
+                      href="edit.html"
+                      >A5 JAVASCRIPT</a
+                    >
+                    <a style="font-size: 0.7em"
+                      >Week 4 - Javascript - Week starting on Monday October 3rd
+                      (10/3/2022) Module |</a
+                    >
+                    <div style="font-size: 0.7em">
+                      <a style="font-weight: bold">Due</a> Oct 16, 2022 at
+                      11:59pm | 100 pts
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="list-group-item list-group-item-courses"
+                  style="border-left: 5px solid green"
+                >
+                  <i class="fa-solid fa-braille" style="margin-right: 10px"></i
+                  ><i
+                    class="fa-regular fa-pen-to-square"
+                    style="margin-left: 5px; margin-right: 10px"
+                  ></i>
+                  <i
+                    class="fa-solid fa-ellipsis-vertical float-end"
+                    style="margin-left: 20px; margin-top: 18px"
+                  ></i
+                  ><i
+                    class="fa fa-check-circle float-end"
+                    aria-hidden="true"
+                    style="color: green; margin-top: 18px"
+                  ></i>
+                  <div class="d-inline-flex flex-column">
+                    <a
+                      style="
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: black;
+                      "
+                      href="edit.html"
+                      >A6 REACT</a
+                    >
+                    <a style="font-size: 0.7em"
+                      >Week 5 - React & Routing - Week starting on Monday
+                      October 10th (10/10/2022) Module |</a
+                    >
+                    <div style="font-size: 0.7em">
+                      <a style="font-weight: bold">Due</a> Oct 23, 2022 at
+                      11:59pm | 100 pts
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

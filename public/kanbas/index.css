@@ -24,6 +24,10 @@
 .list-group-item {
   border: none;
   padding-left: 0;
+  border-radius: 0;
+}
+.list-group {
+  border-radius: 0;
 }
 
 .list-group-item-courses {
