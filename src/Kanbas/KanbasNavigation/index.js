@@ -1,8 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 function KanbasNavigation() {
-  const { pathName } = useLocation();
+  const { pathname } = useLocation();
+  console.log(pathname);
 
-  console.log(pathName);
   const links = [
     { iconClass: "fa-solid fa-n fa-2x", color: "red", href: null, text: null },
     {
@@ -67,11 +67,21 @@ function KanbasNavigation() {
         <Link
           key={index}
           to={`/Kanbas/${link.text}`}
-          className="list-group-item kanbas-nav d-flex flex-column justify-content-center align-items-center"
+          className={`list-group-item kanbas-nav d-flex flex-column justify-content-center align-items-center ${
+            link.text && pathname.includes(link.text) && "active"
+          }`}
         >
-          <i className={link.iconClass} style={{ color: link.color }}></i>
+          <i
+            className={link.iconClass}
+            style={{
+              color: link.color,
+            }}
+          ></i>
           {link.text && (
-            <span className="kanbas-nav-a" href={link.href}>
+            <span
+              className="kanbas-nav-a"
+              style={{ color: pathname.includes(link.text) ? "red" : "white" }}
+            >
               {link.text}
             </span>
           )}
