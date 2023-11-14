@@ -96,6 +96,7 @@ function Dashboard({
 }
 
 const CourseCard = ({ course }) => {
+  console.log(course);
   return (
     <div
       className="col-sm-6 col-md-4 col-xl-3"
