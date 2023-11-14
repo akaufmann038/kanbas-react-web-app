@@ -11,7 +11,7 @@ import { Provider } from "react-redux";
 import axios from "axios";
 
 function Kanbas() {
-  const URL = "http://localhost:4000/api/courses";
+  const URL = "https://kanbas-node-server-app-wmbm.onrender.com/api/courses";
   const [courses, setCourses] = useState([]);
   const [course, setCourse] = useState({
     name: "New Course",
