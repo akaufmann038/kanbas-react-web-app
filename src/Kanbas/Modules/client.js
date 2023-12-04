@@ -1,11 +1,10 @@
 import axios from "axios";
-// export const COURSES_URL =
-//   "https://kanbas-node-server-app-wmbm.onrender.com/api/courses";
-// const MODULES_URL =
-//   "https://kanbas-node-server-app-wmbm.onrender.com/api/modules";
-export const COURSES_URL = "http://localhost:4000/api/courses";
-export const MODULES_URL = "http://localhost:4000/api/modules";
-export const BASE_API = "http://localhost:4000";
+export const COURSES_URL = "https://homework6-server.onrender.com/api/courses";
+export const MODULES_URL = "https://homework6-server.onrender.com/api/modules";
+export const BASE_API = "https://homework6-server.onrender.com";
+//export const COURSES_URL = "http://localhost:4000/api/courses";
+//export const MODULES_URL = "http://localhost:4000/api/modules";
+//export const BASE_API = "http://localhost:4000";
 
 export const updateModuleClient = async (module) => {
   const response = await axios.put(`${MODULES_URL}/${module._id}`, module);
