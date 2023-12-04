@@ -25,7 +25,9 @@ function Courses({}) {
     setCourse(response.data);
   };
   useEffect(() => {
-    findCourseById(courseId);
+    if (courseId !== "Home" && courseId !== undefined) {
+      findCourseById(courseId);
+    }
   }, [courseId]);
 
   const generateBreadcrumb = () => {

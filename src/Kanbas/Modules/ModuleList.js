@@ -23,10 +23,12 @@ function ModuleList() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    findModulesForCourse(courseId).then((modules) => {
-      console.log(modules);
-      dispatch(setModules(modules));
-    });
+    if (courseId !== "Home") {
+      findModulesForCourse(courseId).then((modules) => {
+        console.log(modules);
+        dispatch(setModules(modules));
+      });
+    }
   }, [courseId]);
 
   const handleAddModule = () => {
