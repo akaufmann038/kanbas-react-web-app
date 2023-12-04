@@ -5,6 +5,8 @@ import Kanbas from "./Kanbas";
 import { HashRouter } from "react-router-dom";
 import { Routes, Route, Navigate } from "react-router";
 
+export const URL = "http://localhost:4000/api/courses";
+
 function App() {
   return (
     <HashRouter>
